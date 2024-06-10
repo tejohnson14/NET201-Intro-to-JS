@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+
+<HTML>
+<HEAD>
+    <title>Experiments with JavaScript</title>
+
+    <script>
+        console.log("Start of the page");
+
+        function show(){
+            let x = 0;
+            let maxcount = 100;
+            console.log("Button Pressed");
+            document.getElementById('partB').style.display = 'block';
+
+            while (x<maxcount){
+                document.getElementById('partB').innerHTML+="<h4>Ouch!<\h4>";
+                x = x+1;
+            }
+        }
+
+    </script>
+</HEAD>
+<BODY>
+<div id="partA">
+    <h1>Causes</h1>
+    <button onclick="show()">Please Don't Press!</button>
+</div>
+<div id="partB" style="display:none;">
+    <h1>Effects</h1>
+    Surpirise! Malware injecting....
+</div>
+
+
+</BODY>
+
+</HTML>
